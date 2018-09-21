@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -f Dockerfile.dev -t sarcastron/docker-react-ci .
 script:
-  - docker run sarcastron/docker-react-ci npm run test:ci
+  - docker run sarcastron/docker-react-ci CI=true npm run test
